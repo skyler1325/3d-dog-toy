@@ -1,4 +1,4 @@
-import { Renderer } from 'obj-renderer'; // Ensure this is installed via npm
+import { Renderer } from 'obj-renderer'; // Ensure this package is installed via npm
 
 document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('webglCanvas');
@@ -7,9 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set background color
     renderer.setClearColor(0, 0, 0); // Black background
 
-    // Load a sample OBJ model
-    const modelPath = 'dog toy.obj'; // Ensure this path is correct
-    renderer.loadOBJFile(modelPath, 'SampleModel');
+    // Load both .OBJ and .MTL files
+    const objPath = './models/sample.obj'; // Ensure correct path
+    const mtlPath = './models/sample.mtl'; // Ensure correct path
+
+    renderer.loadOBJWithMTL(objPath, mtlPath, 'SampleModel');
 
     // Render the scene
     renderer.renderScene();
