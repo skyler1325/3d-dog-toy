@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const canvas = document.getElementById("webglCanvas");
+    console.log(window.ObjRenderer);
     const renderer = new window.ObjRenderer.Renderer(canvas);
 
     // Set background color
