@@ -1,1 +1,1 @@
-document.addEventListener("DOMContentLoaded",(()=>{const e=document.getElementById("webglCanvas"),d=new window.ObjRenderer.Renderer(e);d.setClearColor(0,0,0),d.loadOBJWithMTL("./models/sample.obj","./models/sample.mtl","SampleModel"),d.renderScene()}));
+
