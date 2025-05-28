@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
     renderer.setClearColor(0, 0, 0); // Black background
 
     // Load both .OBJ and .MTL files
-    const objPath = './models/sample.obj'; // Ensure correct path
-    const mtlPath = './models/sample.mtl'; // Ensure correct path
+    const objPath = 'dog toy.obj'; // Ensure correct path
+    const mtlPath = 'dog_doy.mtl'; // Ensure correct path
 
     renderer.loadOBJWithMTL(objPath, mtlPath, 'SampleModel');
 
